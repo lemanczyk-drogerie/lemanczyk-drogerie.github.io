@@ -178,7 +178,8 @@ body {
     height: 100%;
     background-repeat: none;
     margin-top: 2%;
-    margin-left: 2%;
+    margin-left:auto;
+    margin-right:auto;
     padding-top: 3%;
     padding-left: 3%;
     padding-right: 3%;
@@ -259,4 +260,18 @@ body {
     padding-bottom:1px;
     padding-top:5px;
     padding-right:5px;
+}
+
+.list_iac_title {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1%;
+    margin-bottom:1%;
+    background-color:#FFB3FD;
+    color:white;
+    border-radius:5px;
+    width:200px;
+    text-align:center;
+    font-size:25px;
+    padding:5px;
 }
