@@ -90,7 +90,7 @@ body {
 
 .drogerie_box {
     background-color: #FFB3FD;
-    width: 1650px;
+    width: 100%;
     height: 100%;
     background-repeat: none;
     padding-top: 10%;
@@ -101,12 +101,12 @@ body {
 
 
 .drogerie_map {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:auto;
+    margin-right:auto;
     margin-top: 10%;
     margin-bottom: 10%;
     padding: 5%;
-    width: 75%;
+    width: 90%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 20px 20px 50px 10px #BA90BC;
