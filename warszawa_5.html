@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <!-- HTML properties -->
+    <head>
+        <!-- Basic properties -->
+        <title>Plany Drogerii - Silcare - Warszawa [5]</title>
+        <meta charset="utf-8">
+        <meta name="author" content="TPE Studio">
+        <meta name="description" content="Strona Internetowa pokazująca plany różnych drogerii Silcare.">
+        <!-- OG properties -->
+        <meta name="og:image" content="resources/og_image.png">
+        <meta name="og:description" content="Strona Internetowa pokazująca plany różnych drogerii Silcare.">
+        <meta name="og:title" content="Plany Drogerii - Silcare - Zielona Góra [2]">
+        <!-- Icons -->
+        <link rel="shortcut icon" href="resources/icon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/apple_144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/apple_114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/apple_72.png">
+        <link rel="apple-touch-icon-precomposed" href="resources/mobile.png">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <!-- Other properties -->
+        <html lang="pl-PL">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <!-- HTML body -->
+    <body>
+        <!-- Main contener div -->
+        <div class="drogerie_box">
+            <!-- Title div -->
+            <div class="index_title">
+                <img src="resources/index.html/silcare.png"><p>
+                Plany Drogerii<p>
+                Warszawa [5]
+            </div>
+            <!-- Help div -->
+            <div class="drogerie_help">
+                <img src="resources/drogerie/info.png" width=75px height=75px><br><br><br>
+                Żeby pokazać daną szafkę kliknij na dany kształt na planie. Aby pokazać inną kliknij ponownie. Aby wrócić do wyboru drogerii kliknij w przycisk powrotu (strzałka). Odświeżenie strony spowoduje zresetowanie wyboru.
+            </div>
+            <!-- Map box div -->
+            <div class="drogerie_map">
+                <img usemap="#main_map" src="resources/warszawa_5.html/main.png"><p>
+                <map name="main_map">
+                    <area shape="rect" coords="168,744,267,810" href="javascript:show1();" alt="s" />
+                    <area shape="rect" coords="67,84,168,321" href="javascript:show2();" alt="s" />
+                    <area shape="rect" coords="443,411,512,479" href="javascript:show3();" alt="s" />
+                    <area shape="rect" coords="557,411,655,479" href="javascript:show4();" alt="s" />
+                    <area shape="rect" coords="684,411,783,479" href="javascript:show5();" alt="s" />
+                    <area shape="rect" coords="811,411,910,479" href="javascript:show6();" alt="s" />
+                    <area shape="rect" coords="1074,118,1181,321" href="javascript:show7();" alt="s" />
+                    <area shape="rect" coords="1249,141,1330,265" href="javascript:show8();" alt="s" />
+                    <area shape="rect" coords="1279,366,1330,559" href="javascript:show9();" alt="s" />
+                    <area shape="rect" coords="938,744,1037,810" href="javascript:show10();" alt="s" />
+                    <area shape="rect" coords="811,744,910,810" href="javascript:show11();" alt="s" />
+                    <area shape="rect" coords="684,744,783,810" href="javascript:show12();" alt="s" />
+                    <area shape="rect" coords="557,744,655,810" href="javascript:show13();" alt="s" />
+                    <area shape="rect" coords="428,744,527,810" href="javascript:show14();" alt="s" />
+                    <area shape="rect" coords="297,744,396,810" href="javascript:show15();" alt="s" />
+                    <area shape="rect" coords="212,84,280,153" href="javascript:show16();" alt="s" />
+                    <area shape="rect" coords="310,84,538,153" href="javascript:show17();" alt="s" />
+                    <area shape="rect" coords="570,84,669,153" href="javascript:show18();" alt="s" />
+                    <area shape="rect" coords="699,84,798,153" href="javascript:show19();" alt="s" />
+                    <area shape="rect" coords="825,84,924,153" href="javascript:show20();" alt="s" />
+                </map>
+            </div>
+            <div class="drogerie_szafka">
+                <div class="drogerie_image" id="script_image">
+                    &nbsp;
+                </div>
+                <div class="drogerie_text" id="script_text">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="drogerie_back">
+                <a href="index.html">
+                    <img src="resources/drogerie/back.png" width=50px height=50px>
+                </a>
+            </div>
+        </div>
+    </body>
+    <script>
+        let show1 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/1.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Kiosk LCD';
+        }
+        let show2 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/2.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Urządzenia / Witryna / TV';
+        }
+        let show3 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/3.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Ciało - Linia Sensual, Rose Gold';
+        }
+        let show4 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<p><h3>Góra:</h3><p><img src="resources/warszawa_5.html/pictures/4c.jpg" width=100% height=50%><p><h3>Strony:</h3><p><img src="resources/warszawa_5.html/pictures/4b.jpg" width=100% height=50%><p><img src="resources/warszawa_5.html/pictures/4a.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = '<p><h3>Góra:</h3> Ozdoby + Wyprzedaż<p><h3>Strona 1:</h3> Płyny - Aceton<p><h3>Strona 2:</h3> Dezynfekcja';
+        }
+        let show5 = () => {
+            let what1 = document.getElementsById('script_image');
+            what1.innerHTML = '<p><h3>Góra:</h3><p><img src="resources/warszawa_5.html/pictures/5c.jpg" width=100% height=50%><p><h3>Strony:</h3><p><img src="resources/warszawa_5.html/pictures/5b.jpg" width=100% height=50%><p><img src="resources/warszawa_5.html/pictures/5a.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = '<p><h3>Góra:</h3> Ozdoby + Wyprzedaż<p><h3>Strona 1:</h3> Płyny - Cleaner<p><h3>Strona 2:</h3> Płyny - Zmywacze / Akcesoria, Płatki Kosmetyczne';
+        }
+        let show6 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<p><img src="resources/warszawa_5.html/pictures/6a.jpg" width=100% height=50%><p><img src="resources/warszawa_5.html/pictures/6b.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Akcesoria (Tipsy, Naklejki, Rzęsy, Narzędzia) | Narzędzia (Cążki, Frezy, Pędzelki, Radełka)';
+        }
+        let show7 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/7.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Lada';
+        }
+        let show8 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/8.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Ramki, Plakaty';
+        }
+        let show9 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/9.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Pilniki, Bloki / Fiku Miku';
+        }
+        let show10 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/10.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Włosy';
+        }
+        let show11 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/11.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Twarz / Depilacja';
+        }
+        let show12 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/12.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Ciało - Kąpiel, itd.';
+        }
+        let show13 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/13.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Stopy';
+        }
+        let show14 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/14.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Dłonie';
+        }
+        let show15 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/15.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Ciało, Pielęgnacja';
+        }
+        let show16 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/16.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Potykacz';
+        }
+        let show17 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/17.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Hybrydy + Topy i Bazy';
+        }
+        let show18 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/18.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Żele UV';
+        }
+        let show19 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/19.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Akryl, Odżywki, Lakiery';
+        }
+        let show20 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/warszawa_5.html/pictures/20.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Oliwki';
+        }
+    </script>
+</html>
+
+
