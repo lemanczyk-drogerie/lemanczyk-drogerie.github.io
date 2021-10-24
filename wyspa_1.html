@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <!-- HTML properties -->
+    <head>
+        <!-- Basic properties -->
+        <title>Plany Drogerii - Silcare - Wyspa [1]</title>
+        <meta charset="utf-8">
+        <meta name="author" content="TPE Studio">
+        <meta name="description" content="Strona Internetowa pokazująca plany różnych drogerii Silcare.">
+        <!-- OG properties -->
+        <meta name="og:image" content="resources/og_image.png">
+        <meta name="og:description" content="Strona Internetowa pokazująca plany różnych drogerii Silcare.">
+        <meta name="og:title" content="Plany Drogerii - Silcare - Zielona Góra [2]">
+        <!-- Icons -->
+        <link rel="shortcut icon" href="resources/icon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/apple_144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/apple_114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/apple_72.png">
+        <link rel="apple-touch-icon-precomposed" href="resources/mobile.png">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <!-- Other properties -->
+        <html lang="pl-PL">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <!-- HTML body -->
+    <body>
+        <!-- Main contener div -->
+        <div class="drogerie_box">
+            <!-- Title div -->
+            <div class="index_title">
+                <img src="resources/index.html/silcare.png"><p>
+                Plany Drogerii<p>
+                Wyspa [1]
+            </div>
+            <!-- Help div -->
+            <div class="drogerie_help">
+                <img src="resources/drogerie/info.png" width=75px height=75px><br><br><br>
+                Żeby pokazać daną szafkę kliknij na dany kształt na planie. Aby pokazać inną kliknij ponownie. Aby wrócić do wyboru drogerii kliknij w przycisk powrotu (strzałka). Odświeżenie strony spowoduje zresetowanie wyboru.
+            </div>
+            <!-- Map box div -->
+            <div class="drogerie_map">
+                <img usemap="#main_map" src="resources/wyspa_1.html/main.jpg"><p>
+                <map name="main_map">
+                    <area shape="rect" coords="218,77,1045,181" href="javascript:show1();" alt="s" />
+                    <area shape="rect" coords="110,181,218,919" href="javascript:show2();" alt="s" />
+                    <area shape="rect" coords="218,919,885,1023" href="javascript:show3();" alt="s" />
+                    <area shape="rect" coords="1282,181,1390,1023" href="javascript:show4();" alt="s" />
+                    <area shape="rect" coords="1045,77,1282,181" href="javascript:show5();" alt="s" />
+                </map>
+            </div>
+            <div class="drogerie_szafka">
+                <div class="drogerie_image" id="script_image">
+                    &nbsp;
+                </div>
+                <div class="drogerie_text" id="script_text">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="drogerie_back">
+                <a href="index.html">
+                    <img src="resources/drogerie/back.png" width=50px height=50px>
+                </a>
+            </div>
+        </div>
+    </body>
+    <script>
+        let show1 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/wyspa_1.html/pictures/1.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Kosmetyka Pielęgnacyjna - Kategorie w blokach pionowych - od lewej:<p>1. włosy, twarz</p><p>2. ciało</p><p>3. dłonie</p><p>4. stopy</p>';
+        }
+        let show2 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/wyspa_1.html/pictures/2.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Hybrydy, Oliwki, Lakiery Tradycyjne';
+        }
+        let show3 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/wyspa_1.html/pictures/3.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Lewa Strona - Hybrydy, Flexy<p>Środek - Lada<p>Prawa Strona - Bazy, Topy, Preparaty';
+        }
+        let show4 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/wyspa_1.html/pictures/4.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = '<p>Prawa Strona: 1. Dezynfekcja, Środki Myjące i Czyszczące; 2. Płyny - Cleanery, Aceton, Zmywacze, Soak Off. Na Górze Urządzenia + Żele UV</p><br><p>Druga Półka od Góry, Środek i Lewa Strona: Ozdoby, Naturalne Produkty do Paznokci</p><br><p>Trzecia Półka od Góry - Środek i Lewa Strona: Formy, Tipsy, Paznokci, Lejki</p><br><p>Dolna Półka, lewa strona i środek: Rękawiczki, Wzorniki</p>';
+        }
+        let show5 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/wyspa_1.html/pictures/5.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Narzędzia + Akcesoria - nożyczki, radełka, cążki, giltoyny, pędzelki i inne';
+        }
+    </script>
+</html>
+
+

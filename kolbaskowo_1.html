@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <!-- HTML properties -->
+    <head>
+        <!-- Basic properties -->
+        <title>Plany Drogerii - Silcare - Warszawa [5]</title>
+        <meta charset="utf-8">
+        <meta name="author" content="TPE Studio">
+        <meta name="description" content="Strona Internetowa pokazująca plany różnych drogerii Silcare.">
+        <!-- OG properties -->
+        <meta name="og:image" content="resources/og_image.png">
+        <meta name="og:description" content="Strona Internetowa pokazująca plany różnych drogerii Silcare.">
+        <meta name="og:title" content="Plany Drogerii - Silcare - Zielona Góra [2]">
+        <!-- Icons -->
+        <link rel="shortcut icon" href="resources/icon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/apple_144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/apple_114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/apple_72.png">
+        <link rel="apple-touch-icon-precomposed" href="resources/mobile.png">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <!-- Other properties -->
+        <html lang="pl-PL">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <!-- HTML body -->
+    <body>
+        <!-- Main contener div -->
+        <div class="drogerie_box">
+            <!-- Title div -->
+            <div class="index_title">
+                <img src="resources/index.html/silcare.png"><p>
+                Plany Drogerii<p>
+                Kołbaskowo
+            </div>
+            <!-- Help div -->
+            <div class="drogerie_help">
+                <img src="resources/drogerie/info.png" width=75px height=75px><br><br><br>
+                Żeby pokazać daną szafkę kliknij na dany kształt na planie. Aby pokazać inną kliknij ponownie. Aby wrócić do wyboru drogerii kliknij w przycisk powrotu (strzałka). Odświeżenie strony spowoduje zresetowanie wyboru.
+            </div>
+            <!-- Map box div -->
+            <div class="drogerie_map">
+                <img usemap="#main_map" src="resources/kolbaskowo_1.html/main.jpg"><p>
+                <map name="main_map">
+                    <area shape="rect" coords="137,981,169,1061" href="javascript:show1();" alt="s" />
+                    <area shape="rect" coords="137,888,169,968" href="javascript:show2();" alt="s" />
+                    <area shape="rect" coords="137,611,169,870" href="javascript:show3();" alt="s" />
+                    <area shape="rect" coords="137,514,169,592" href="javascript:show4();" alt="s" />
+                    <area shape="rect" coords="137,420,169,500" href="javascript:show5();" alt="s" />
+                    <area shape="rect" coords="137,324,169,404" href="javascript:show6();" alt="s" />
+                    <area shape="rect" coords="137,231,169,311" href="javascript:show7();" alt="s" />
+                    <area shape="rect" coords="137,139,169,219" href="javascript:show8();" alt="s" />
+                    <area shape="rect" coords="247,139,287,179" href="javascript:show9();" alt="s" />
+                    <area shape="rect" coords="429,732,449,634" href="javascript:show10b();" alt="s" />
+                    <area shape="rect" coords="429,617,449,519" href="javascript:show11b();" alt="s" />
+                    <area shape="rect" coords="429,404,449,500" href="javascript:show12b();" alt="s" />
+                    <area shape="rect" coords="454,732,473,634" href="javascript:show10a();" alt="s" />
+                    <area shape="rect" coords="454,617,473,519" href="javascript:show11a();" alt="s" />
+                    <area shape="rect" coords="454,404,473,500" href="javascript:show12a();" alt="s" />
+                    <area shape="rect" coords="429,870,473,968" href="javascript:show14();" alt="s" />
+                    <area shape="rect" coords="907,541,965,598" href="javascript:show15_16();" alt="s" />
+                    <area shape="rect" coords="1114,484,1173,541" href="javascript:show15_16();" alt="s" />
+                    <area shape="rect" coords="690,1051,844,911" href="javascript:show17();" alt="s" />
+                    <area shape="rect" coords="891,376,1018,394" href="javascript:show18a();" alt="s" />
+                    <area shape="rect" coords="891,280,1018,302" href="javascript:show19a();" alt="s" />
+                    <area shape="rect" coords="891,399,1018,416" href="javascript:show18b();" alt="s" />
+                    <area shape="rect" coords="891,307,1018,322" href="javascript:show19b();" alt="s" />
+                    <area shape="rect" coords="1230,390,1263,470" href="javascript:show20();" alt="s" />
+                    <area shape="rect" coords="1230,296,1263,376" href="javascript:show21();" alt="s" />
+                    <area shape="rect" coords="1230,200,1263,280" href="javascript:show22();" alt="s" />
+                    <area shape="rect" coords="1063,142,1143,175" href="javascript:show23();" alt="s" />
+                    <area shape="rect" coords="970,142,1050,175" href="javascript:show24();" alt="s" />
+                    <area shape="rect" coords="505,231,545,271" href="javascript:show25();" alt="s" />
+                    <area shape="rect" coords="346,231,473,271" href="javascript:show26();" alt="s" />
+                </map>
+            </div>
+            <div class="drogerie_szafka">
+                <div class="drogerie_image" id="script_image">
+                    &nbsp;
+                </div>
+                <div class="drogerie_text" id="script_text">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="drogerie_back">
+                <a href="index.html">
+                    <img src="resources/drogerie/back.png" width=50px height=50px>
+                </a>
+            </div>
+        </div>
+    </body>
+    <script>
+        let show1 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/1.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Stand SOPRO';
+        }
+        let show2 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/2.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Urządzenia';
+        }
+        let show3 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/3.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Hybrydy';
+        }
+        let show4 = () => {
+            let what1 = document.getElementById('script_text');
+            what1.innerHTML = 'Oliwki, Odżywki, Lakiery';
+        }
+        let show5 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/5.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Żele UV, Topy, Bazy';
+        }
+        let show6 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/6.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Pilniki i Bloki';
+        }
+        let show7 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/7.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Fiku Miku - Celety, Formy, Poduszki, Serwety';
+        }
+        let show8 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/8.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Tipsy, Rzęsy, Klej';
+        }
+        let show9 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/9.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'AQUAYO';
+        }
+        let show10a = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/10a.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Narzędzia - cążki, nożyczki, radełka, formy, patyczki | Góra -  Ozdoby';
+        }
+        let show10b = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/10b.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Płyny | Góra - Ozdoby';
+        }
+        let show11a = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/11a.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Narzędzia, Akcesoria, Pędzelki | Góra - Ozdoby';
+        }
+        let show11b = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/11b.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Płyny - Aceton, Cleaner | Góra - Ozdoby';
+        }
+        let show12a = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/12a.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Narzędzia, Akcesoria - Pędzelki, Frezy, Nakładki | Góra - Ozdoby';
+        }
+        let show12b = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/12b.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Płyny - Soak off, Zmywacze | Góra - Ozdoby';
+        }
+        let show14 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/14.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Kosmetyka Pielęgnacyjna, Żele Kolorowe, Wyprzedaż';
+        }
+        let show15_16 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/15_16.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Szafka NOWOŚĆ - linia Rose Gold + okazje';
+        }
+        let show17 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/17.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Kiosk LCD';
+        }
+        let show18a = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/18a.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Dezynfekcja + Rękawiczki';
+        }
+        let show18b = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/18b.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Kosmetyka Pielęgnacyjna, Linia Sensual + Nowości';
+        }
+        let show19a = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/19a.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = '';
+        }
+        let show19b = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/19b.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Dezynfekcja, Linia Papaya + Mydło';
+        }
+        let show20 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/20.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Ciało - Balsamy, Peelingi';
+        }
+        let show21 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/21.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Ciało - Kąpiel + Mycie';
+        }
+        let show22 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/22.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Włosy i Twarz';
+        }
+        let show23 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/23.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Dłonie + Depilacja';
+        }
+        let show24 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/24.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Stopy';
+        }
+        let show25 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/25.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'PAESE';
+        }
+        let show26 = () => {
+            let what1 = document.getElementById('script_image');
+            what1.innerHTML = '<img src="resources/kolbaskowo_1.html/pictures/26.jpg" width=100% height=50%>';
+            let what2 = document.getElementById('script_text');
+            what2.innerHTML = 'Lada';
+        }
+    </script>
+</html>
+
+
